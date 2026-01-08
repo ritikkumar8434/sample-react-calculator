@@ -11,8 +11,8 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync build/ s3://react-cicd-demo-bucket --delete
-      - aws cloudfront create-invalidation --distribution-id ABCD1234 --paths "/*"
+      - aws s3 sync build/ s3://react-app-hosting1234 --delete
+      - aws cloudfront create-invalidation --distribution-id E1M8ZQQ2Z05WKO --paths "/*"
 
 artifacts:
   files:
